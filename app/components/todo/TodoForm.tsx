@@ -19,6 +19,7 @@ const TodoForm = ({ onSaveTodo, autoCompleteTags = [] }: TodoFormProps) => {
     setInputValue("");
     setTags([]);
   };
+  
 
   return (
     <div>
@@ -36,8 +37,8 @@ const TodoForm = ({ onSaveTodo, autoCompleteTags = [] }: TodoFormProps) => {
       <TagsInput
         tags={tags}
         autoCompleteTags={autoCompleteTags}
-        placeholder={inputValue}
-        
+        placeholder={"Enter tags"}
+   
       />
     </div>
   );
